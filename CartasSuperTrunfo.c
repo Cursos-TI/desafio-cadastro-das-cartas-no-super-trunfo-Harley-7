@@ -2,6 +2,8 @@
 
 int main() {
     //variáveis da carta 1
+    char estado_carta1;
+    char nome_da_cidade_carta1[50];
     int populacao_carta1, 
     numero_de_pontos_turisticos_carta1;
 
@@ -9,13 +11,20 @@ int main() {
     pib_carta1;
 
     //variaveis da carta 2
+    char estado_carta2;
+    char nome_da_cidade_carta2[50];
     int populacao_carta2, 
     numero_de_pontos_turisticos_carta2;
-
     float area_carta2,
     pib_carta2;
 
     //Entrada do dados digitados pelo usuário no terminal
+
+    printf("Digite uma letra entre A e H para o seu Estado na Carta 1: \n");
+    scanf("%c", &estado_carta1);
+
+    printf("Digite o nome da sua cidade na Carta 1: \n");
+    scanf("%s", &nome_da_cidade_carta1);
 
     printf("Digite a população da Carta 1: \n");
     scanf("%d", &populacao_carta1);
@@ -28,6 +37,12 @@ int main() {
 
     printf("Digite o número de pontos turísticos da Carta 1: \n");
     scanf("%d", &numero_de_pontos_turisticos_carta1);
+ 
+    printf("Digite uma letra entre A e H para o seu Estado na Carta 2: \n");
+    scanf("%s", &estado_carta2);
+
+    printf("Digite o nome da sua cidade na Carta 2: \n");
+    scanf("%s", &nome_da_cidade_carta2);
 
     printf("Digite a população da Carta 2: \n");
     scanf("%d", &populacao_carta2);
@@ -47,6 +62,9 @@ int main() {
 
     //Dados da Carta 1
     printf("Carta 1 \n");
+    printf("Estado: %c \n", estado_carta1);
+    printf("Código: %c01 \n", estado_carta1);
+    printf("Nome da Cidade: %s \n", nome_da_cidade_carta1);
     printf("População: %d \n", populacao_carta1);
     printf("Área: %f \n", area_carta1);
     printf("PIB: %f \n", pib_carta1);
@@ -55,6 +73,9 @@ int main() {
 
     //Dados da Carta 2
     printf("Carta 2 \n");
+    printf("Estado: %c \n", estado_carta2);
+    printf("Código: %c02 \n", estado_carta2);
+    printf("Nome da Cidade: %s \n", nome_da_cidade_carta2);
     printf("População: %d \n", populacao_carta2);
     printf("Área: %f \n", area_carta2);
     printf("PIB: %f \n", pib_carta2);
